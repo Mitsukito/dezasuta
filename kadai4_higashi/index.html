@@ -31,7 +31,7 @@
                 <li><img src="images/pc_first-100.jpg" alt="店内の様子" /></li>
             </ul>
         </header>
-        <div class="about_wrap" id="about_us">
+        <div class="about_wrap">
             <div class="lead">
                 <p class="first_text">Have a happy day from a cup of coffee.</p>
                 <p class="second_text">
@@ -41,8 +41,9 @@
                     毎日を丁寧に大切に過ごしたい。だからこそ一杯一杯丁寧にコーヒーを入れ<br />足を運んでくれるお客さんには落ち着く空間とこだわりのコーヒーを提供したい。
                 </p>
             </div>
-            <div class="about">
+            <div class="about" id="about_us">
                 <img src="images/pc_about-100.jpg" alt="こだわりのコーヒー" />
+
                 <div class="about_text">
                     <h2><img src="images/about_us@2x.png" alt="about us" /></h2>
                     <p class="subtitle">
@@ -58,21 +59,25 @@
             <h2><img src="images/menu@2x.png" alt="MENU" /></h2>
             <div class="menu_container">
                 <div class="menu_box">
-                    <img src="images/pc_menu_drink-100.jpg" alt="Drink" />
+                    <p>
+                        <img src="images/pc_menu_drink-100.jpg" alt="Drink" />
+                    </p>
                     <h3>Drink</h3>
                     <p>
                         ドリンクメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。
                     </p>
                 </div>
                 <div class="menu_box">
-                    <img src="images/pc_menu_food-100.jpg" alt="Food" />
+                    <p><img src="images/pc_menu_food-100.jpg" alt="Food" /></p>
                     <h3>Food</h3>
                     <p>
                         フードメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。
                     </p>
                 </div>
                 <div class="menu_box">
-                    <img src="images/pc_menu_sweets-100.jpg" alt="Sweets" />
+                    <p>
+                        <img src="images/pc_menu_sweets-100.jpg" alt="Sweets" />
+                    </p>
                     <h3>Sweets</h3>
                     <p>
                         スイーツメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。
@@ -83,11 +88,13 @@
         <div class="gallery_wrap" id="gallery">
             <h2><img src="images/gallery@2x.png" alt="" /></h2>
             <div class="gallery">
-                <img src="images/pc_gallary_01-100.jpg" alt="" />
-                <img src="images/pc_gallary_02-100.jpg" alt="" />
-                <img src="images/pc_gallary_03-100.jpg" alt="" />
-                <img src="images/pc_gallary_04-100.jpg" alt="" />
-                <img src="images/pc_gallary_05-100.jpg" alt="" />
+                <ul>
+                    <li><img src="images/pc_gallary_01-100.jpg" alt="" /></li>
+                    <li><img src="images/pc_gallary_02-100.jpg" alt="" /></li>
+                    <li><img src="images/pc_gallary_03-100.jpg" alt="" /></li>
+                    <li><img src="images/pc_gallary_04-100.jpg" alt="" /></li>
+                    <li><img src="images/pc_gallary_05-100.jpg" alt="" /></li>
+                </ul>
             </div>
         </div>
 
@@ -131,6 +138,7 @@
                     src="images/design_cafe_logo_footer@2x.png"
                     alt="DESIGN CAFE"
                 />
+
                 <div class="adress">
                     <p>OPEN 18:00 / CLOSE 24:00</p>
                     <p>〒150-0022</p>
@@ -140,7 +148,7 @@
             </div>
             <p>&copy;2021 DESIGN CAFE</p>
         </footer>
-        <a href="#header"
+        <a href="#header" class="to_top"
             ><img src="images/to_top@2x.png" alt="ページトップへ"
         /></a>
     </body>

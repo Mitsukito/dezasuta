@@ -101,6 +101,7 @@ h2 img {
     max-width: 1000px;
     margin: 0 auto;
     margin-bottom: 107px;
+    padding: 0px 10px;
 }
 
 .about_wrap .lead {
@@ -116,16 +117,19 @@ h2 img {
 .about_wrap .lead .second_text {
     font-size: 82px;
     margin-bottom: 45px;
+    line-height: 96px;
 }
 
 .about_wrap .lead .third_text {
     font-size: 23px;
     margin-bottom: 100px;
+    line-height: 38px;
 }
 
 .about {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .about > img {
@@ -157,11 +161,12 @@ h2 img {
 .menu_wrap {
     max-width: 1000px;
     margin: 0 auto;
-    text-align: center;
+    padding: 0px 10px;
 }
 
 .menu_wrap h2 {
     margin-bottom: 47px;
+    text-align: center;
 }
 
 .menu_container {
@@ -175,7 +180,6 @@ h2 img {
 }
 
 .menu_container .menu_box {
-    text-align: start;
     width: 30%;
 }
 
@@ -199,13 +203,15 @@ h2 img {
     margin-bottom: 25px;
 }
 
-.gallery {
+.gallery ul {
     display: flex;
     margin-bottom: 70px;
+    justify-content: space-between;
+    background-color: #d30202;
 }
 
-.gallery img {
-    width: 20%;
+.gallery ul li {
+    width: 20vw;
 }
 
 /* イベント箇所 */
@@ -213,6 +219,7 @@ h2 img {
     max-width: 1000px;
     margin: 0 auto;
     text-align: center;
+    padding: 0px 10px;
 }
 
 .event_wrap h2 {
@@ -263,12 +270,14 @@ iframe {
 /* フッター箇所 */
 footer {
     background-color: white;
+    padding: 0px 10px;
 }
 
 .footer_wrap {
     max-width: 1000px;
     margin: 0 auto;
     display: flex;
+    align-items: flex-start;
     padding-top: 82px;
 }
 
@@ -280,7 +289,7 @@ footer {
     margin-left: 68px;
 }
 
-.footer_wrap p {
+.footer_wrap .adress p {
     font-size: 20px;
     margin-bottom: 20px;
 }
@@ -291,9 +300,9 @@ footer > p {
 }
 
 /* ジャンプボタン */
-body > a img {
+.to_top {
     position: fixed;
-    right: 300px;
-    bottom: 0px;
+    right: 10px;
+    bottom: 10px;
     width: 125px;
 }
