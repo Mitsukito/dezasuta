@@ -26,6 +26,10 @@ dd {
     font-feature-settings: "palt";
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 a {
     /*下線を消す*/
     text-decoration: none;
@@ -64,7 +68,6 @@ body {
     left: 0;
     width: 100%;
     box-sizing: border-box;
-    background-color: rgb(0, 0, 0, 0.5);
 }
 
 h1 {
@@ -238,8 +241,7 @@ h2 img {
 }
 
 .event_list {
-    width: 100%;
-    border: 4px solid #4f260b;
+    border: 4px solid rgb(79, 38, 11);
     background-color: white;
     margin-bottom: 80px;
 }
@@ -434,25 +436,29 @@ footer > p {
         height: 45px;
     }
 
+    .header_wrap h1 img {
+        height: 41px;
+    }
+
     /* コンセプト箇所 */
     .about_wrap .lead {
         margin-top: 40px;
     }
 
     .about_wrap .lead .first_text {
-        font-size: 17px;
+        font-size: 2.2vw;
         margin-bottom: 25px;
     }
 
     .about_wrap .lead .second_text {
-        font-size: 38px;
-        line-height: 44px;
+        font-size: 4.6vw;
+        line-height: 5.7vw;
         margin-bottom: 25px;
     }
 
     .about_wrap .lead .third_text {
-        font-size: 16px;
-        line-height: 30px;
+        font-size: 2.1vw;
+        line-height: 4vw;
         margin-bottom: 65px;
     }
 
@@ -492,8 +498,12 @@ footer > p {
 
     .about_text .subtitle {
         margin: 37px 0px 30px 0px;
-        font-size: 36px;
-        line-height: 45px;
+        font-size: 4.7vw;
+        line-height: 5.9vw;
+    }
+
+    .about_text .main_text {
+        font-size: 2vw;
     }
 
     /* メニュー箇所 */
@@ -503,14 +513,20 @@ footer > p {
 
     .menu_container {
         display: block;
+        margin-bottom: 95px;
     }
 
     .menu_container .menu_box {
-        width: 300px;
+        width: 100%;
         margin: 0px auto 60px;
     }
 
+    .menu_container .menu_box p img {
+        width: 100%;
+    }
+
     /* ギャラリー箇所 */
+
     .gallery ul li {
         display: none;
     }
@@ -522,6 +538,10 @@ footer > p {
 
     .gallery ul {
         margin-bottom: 35px;
+    }
+
+    .gallery ul li img {
+        width: 100%;
     }
 
     /* イベント箇所 */
@@ -537,8 +557,13 @@ footer > p {
     }
 
     .event_list ul li {
-        display: inline-block;
+        display: block;
         padding: 0px 27px;
+        font-size: 16px;
+    }
+
+    .event_list ul {
+        display: block;
     }
 
     .event_list {

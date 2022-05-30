@@ -198,6 +198,20 @@
                     $(this).toggleClass("open");
                 });
             });
+
+            var mvh = $(".slider").height();
+
+            $(window).scroll(function () {
+                var top = $(window).scrollTop();
+                if (mvh < top) {
+                    $(".header_wrap").css(
+                        "background-color",
+                        "rgba(79,38,11,0.8)"
+                    );
+                } else {
+                    $(".header_wrap").css("background-color", "transparent");
+                }
+            });
         </script>
     </body>
 </html>
