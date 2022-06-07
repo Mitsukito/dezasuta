@@ -68,6 +68,7 @@ body {
     left: 0;
     width: 100%;
     box-sizing: border-box;
+    z-index: 100;
 }
 
 h1 {
@@ -326,6 +327,49 @@ footer > p {
     display: none;
 }
 
+.slick-dots {
+    bottom: 20px;
+}
+
+.slick-dots li button:before {
+    color: white;
+}
+
+.slick-dots li.slick-active button:before {
+    color: white;
+}
+
+.slick-dotted.slick-slide {
+    margin-bottom: 0px;
+}
+
+/* .slick-next {
+    right: 0 !important;
+}
+.slick-prev {
+    left: 0 !important;
+}
+.slick-arrow {
+    z-index: 2 !important;
+} */
+
+.prev_icon {
+    position: absolute;
+    top: 50%;
+    left: 150px;
+    transform: translate(0, -50%);
+    width: 15px;
+    z-index: 100;
+}
+.next_icon {
+    position: absolute;
+    top: 50%;
+    right: 150px;
+    transform: translate(0, -50%);
+    width: 15px;
+    z-index: 100;
+}
+
 @media screen and (max-width: 1100px) {
     .pc_nav {
         display: none;
@@ -542,6 +586,13 @@ footer > p {
 
     .gallery ul li img {
         width: 100%;
+    }
+
+    .prev_icon {
+        left: 10px;
+    }
+    .next_icon {
+        right: 10px;
     }
 
     /* イベント箇所 */
